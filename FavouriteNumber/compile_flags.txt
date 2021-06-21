@@ -1,4 +1,4 @@
--IC:\Users\calmc\OneDrive\Desktop\CPLUSPLUSPROJECTS\FavouriteNumber
+-IC:\Users\calmc\OneDrive\Desktop\CPLUSPLUSPROJECTS\CPP-Projects\FavouriteNumber
 -std=c++17
 -target
 
