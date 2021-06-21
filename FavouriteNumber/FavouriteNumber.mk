@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=FavouriteNumber
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/calmc/OneDrive/Desktop/CPLUSPLUSPROJECTS
-ProjectPath            :=C:/Users/calmc/OneDrive/Desktop/CPLUSPLUSPROJECTS/FavouriteNumber
+WorkspacePath          :=C:/Users/calmc/OneDrive/Desktop/CPLUSPLUSPROJECTS/CPP-Projects
+ProjectPath            :=C:/Users/calmc/OneDrive/Desktop/CPLUSPLUSPROJECTS/CPP-Projects/FavouriteNumber
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/calmc/OneDrive/Desktop/CPLUSPLUSPROJECTS/FavouriteNumber/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/calmc/OneDrive/Desktop/CPLUSPLUSPROJECTS/CPP-Projects/FavouriteNumber/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
