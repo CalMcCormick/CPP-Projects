@@ -1,0 +1,4 @@
+-IC:\Users\calmc\OneDrive\Desktop\CPLUSPLUSPROJECTS\DefaultProjectSettings
+-std=c++17
+-target
+
