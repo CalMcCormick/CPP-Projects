@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ FavouriteNumber - Debug ]----------"
-	@cd "FavouriteNumber" && "$(MAKE)" -f  "FavouriteNumber.mk"
+	@echo "----------Building project:[ FranksCarpetCleaningService - Debug ]----------"
+	@cd "FranksCarpetCleaningService" && "$(MAKE)" -f  "FranksCarpetCleaningService.mk"
 clean:
-	@echo "----------Cleaning project:[ FavouriteNumber - Debug ]----------"
-	@cd "FavouriteNumber" && "$(MAKE)" -f  "FavouriteNumber.mk" clean
+	@echo "----------Cleaning project:[ FranksCarpetCleaningService - Debug ]----------"
+	@cd "FranksCarpetCleaningService" && "$(MAKE)" -f  "FranksCarpetCleaningService.mk" clean
