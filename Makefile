@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ FranksCarpetCleaningService - Debug ]----------"
-	@cd "FranksCarpetCleaningService" && "$(MAKE)" -f  "FranksCarpetCleaningService.mk"
+	@echo "----------Building project:[ CurrencyConverter - Debug ]----------"
+	@cd "CurrencyConverter" && "$(MAKE)" -f  "CurrencyConverter.mk"
 clean:
-	@echo "----------Cleaning project:[ FranksCarpetCleaningService - Debug ]----------"
-	@cd "FranksCarpetCleaningService" && "$(MAKE)" -f  "FranksCarpetCleaningService.mk" clean
+	@echo "----------Cleaning project:[ CurrencyConverter - Debug ]----------"
+	@cd "CurrencyConverter" && "$(MAKE)" -f  "CurrencyConverter.mk" clean
