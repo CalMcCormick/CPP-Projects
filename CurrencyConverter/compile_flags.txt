@@ -1,0 +1,4 @@
+-IC:\Users\calmc\OneDrive\Desktop\CPLUSPLUSPROJECTS\CPP-Projects\CurrencyConverter
+-std=c++17
+-target
+
