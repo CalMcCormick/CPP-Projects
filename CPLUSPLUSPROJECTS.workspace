@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CPLUSPLUSPROJECTS" Database="" Version="10000">
-  <Project Name="FavouriteNumber" Path="FavouriteNumber/FavouriteNumber.project" Active="Yes"/>
+  <Project Name="FavouriteNumber" Path="FavouriteNumber/FavouriteNumber.project" Active="No"/>
+  <Project Name="CalculateRoomArea" Path="CalculateRoomArea/CalculateRoomArea.project" Active="No"/>
+  <Project Name="FranksCarpetCleaningService" Path="FranksCarpetCleaningService/FranksCarpetCleaningService.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="FavouriteNumber" ConfigName="Debug"/>
+      <Project Name="CalculateRoomArea" ConfigName="Debug"/>
+      <Project Name="FranksCarpetCleaningService" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="FavouriteNumber" ConfigName="Debug"/>
+      <Project Name="CalculateRoomArea" ConfigName="Release"/>
+      <Project Name="FranksCarpetCleaningService" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
