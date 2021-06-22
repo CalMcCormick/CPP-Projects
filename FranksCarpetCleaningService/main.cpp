@@ -8,8 +8,8 @@ using namespace std;
 int main(){
 	
     cout << "Welcome to Frank's Cleaning Service!" << endl;
-    
     cout << "\nHow many small rooms would you like to be cleaned?" << endl;
+    
     int num_of_small_rooms {0};
     cin >> num_of_small_rooms;
     
