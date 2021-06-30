@@ -22,10 +22,13 @@ public:
     ~Movies();
 
     // Creating prototype for add_movie method
-    void add_movie(std::string title, std::string rating, int times_watched);
+    bool add_movie(std::string title, std::string rating, int times_watched);
+    // Prototype for incrementing the 'times watched' number
+    bool increment_watched(std::string title);
+    // Prototype for displaying each movie
+    // Set this one to const because it wron't be changing each movie
+    void display() const;
 
-    // CARRY ON FROM HERE
-    // TRY IMPLEMENTING IT YOURSELF BEFORE LOOKING AT SOLUTIONS VIDEO
 };
 
 
