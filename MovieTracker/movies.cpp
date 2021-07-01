@@ -12,10 +12,14 @@ Movies::Movies() {
     
 }
 
-void Movies::show_collection() {
-    for (Movie movie: movies) {
-        movie.display();
-    }
+bool Movies::show_collection() {
+
+    if (movies.size() != 0)
+        for (Movie movie: movies) {
+            movie.display();
+        }
+        return true;
+    return false;
 }
 
 // Only adding movies to the collection that aren't already there
