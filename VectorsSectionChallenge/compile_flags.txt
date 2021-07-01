@@ -1,4 +1,0 @@
--IC:\Users\calmc\OneDrive\Desktop\CPLUSPLUSPROJECTS\CPP-Projects\VectorsSectionChallenge
--std=c++17
--target
-
