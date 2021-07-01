@@ -22,7 +22,7 @@ public:
     Movies();
 
     // Display movie collection
-    void show_collection();
+    bool show_collection();
 
     bool add_to_collection(std::string title, std::string rating, int times_watched);
 
