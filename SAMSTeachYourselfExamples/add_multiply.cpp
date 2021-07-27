@@ -8,22 +8,15 @@ This will carry on in a continous loop until the user selects to leave
 #include <iostream>
 
 // Function prototype
-void add_multiply(int num1, int num2);
-
-// Function declaration
-void add_multiply(int num1, int num2) {
-    std::cout << std::endl;
-    std::cout << num1 << " + " << num2 << " = " << (num1 + num2) << std::endl;
-    std::cout << num1 << " x " << num2 << " = " << (num1 * num2) << std::endl;
-}
+void add_multiply(double num1, double num2);
 
 int main() {
 
     // The infinite loop! How exciting!
     for (;;) {
     // Gather numbers
-    int num1 {}, num2 {};
-    std::cout << "\nPlease enter two integers seperated by a space " << std::endl;
+    double num1 {}, num2 {};
+    std::cout << "\nPlease enter two numbers seperated by a space " << std::endl;
     std::cin >> num1 >> num2;
 
     // See if numbers are correct
@@ -53,4 +46,11 @@ int main() {
     }
 
     return 0;
+}
+
+// Function declaration
+void add_multiply(double num1, double num2) {
+    std::cout << std::endl;
+    std::cout << num1 << " + " << num2 << " = " << (num1 + num2) << std::endl;
+    std::cout << num1 << " x " << num2 << " = " << (num1 * num2) << std::endl;
 }
