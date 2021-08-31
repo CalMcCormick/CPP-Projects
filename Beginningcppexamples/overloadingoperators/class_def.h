@@ -18,6 +18,10 @@ public:
     // Destructor
     ~Mystring();
 
+    // Operator Overloading - copy assignment
+    // Keeping it const because we don't want to fuck with it.
+    Mystring &operator=(const Mystring &rhs);
+
     // Member methods
     void display() const;
     int get_length() const;
