@@ -34,6 +34,20 @@ Mystring::Mystring(const Mystring &source)
         std::strcpy(str,source.str);
     }
 
+Mystring &Mystring::operator=(const Mystring &rhs) {
+    std::cout << "Copy assignment" << std::endl;
+    // First need to check that they're not already the same
+    if (this == &rhs)
+        return *this;
+    else {
+        delete [] str;
+        str = new char[std::strlen(rhs.str) + 1];
+        std::strcpy(str, rhs.str);
+        return *this;
+    }
+}
+
+
 // Destructor
 Mystring::~Mystring() {
     // Freeing up the memory we created for str
