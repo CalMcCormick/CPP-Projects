@@ -8,6 +8,14 @@ When we do do this, it needs to make sence.
 
 // The example code is going ot be from a custom built string class, using raw pointers for extra practice
 // All in seperate documents, check folder for the rest
+
+/*
+Basic template for operator overloading:
+
+Type &Type::operator=(const Type &rhs (right hand side))
+*/
+
+
 #include <iostream>
 #include "class_def.h"
 
@@ -20,9 +28,14 @@ int main() {
     // copy constructor
     Mystring eddy{cal};
 
+    Mystring kurt;
+    // Using the overloaded constructor
+    kurt = cal;
+
     empty.display();
     cal.display();
     eddy.display();
+    kurt.display();
 
     return {};
 }
