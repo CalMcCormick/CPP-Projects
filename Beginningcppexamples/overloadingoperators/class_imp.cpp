@@ -34,6 +34,17 @@ Mystring::Mystring(const Mystring &source)
         std::strcpy(str,source.str);
     }
 
+// Move constructor
+Mystring::Mystring(Mystring &&source)
+    // Copy the data from one pointer
+    :str(source.str) {
+        // Delete the copied pointer
+        source.str = nullptr;
+        std::cout << "Move constructor used" << std::endl;
+    }
+
+
+// Copy assignment
 Mystring &Mystring::operator=(const Mystring &rhs) {
     std::cout << "Copy assignment" << std::endl;
     // First need to check that they're not already the same
@@ -47,6 +58,19 @@ Mystring &Mystring::operator=(const Mystring &rhs) {
     }
 }
 
+// Move assignment
+Mystring &Mystring::operator=(Mystring &&rhs) {
+    std::cout << "Using move assignment" << std::endl;
+    // Checking for self reference
+    if (this == &rhs)
+        return *this;
+    else {
+        delete [] str;
+        str = rhs.str;
+        rhs.str = nullptr;
+        return *this;
+    }
+}
 
 // Destructor
 Mystring::~Mystring() {
