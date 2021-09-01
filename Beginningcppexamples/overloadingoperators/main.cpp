@@ -32,10 +32,16 @@ int main() {
     // Using the overloaded constructor
     kurt = cal;
 
+    // Using the move assignment on r values instead of deep copying l values
+    Mystring a{"Hello"};
+    a = Mystring{"Hola"};
+    a = "Bonjour";
+
     empty.display();
     cal.display();
     eddy.display();
     kurt.display();
+    a.display();
 
     return {};
 }
