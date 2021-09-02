@@ -72,6 +72,44 @@ Mystring &Mystring::operator=(Mystring &&rhs) {
     }
 }
 
+// Equality check operator
+bool Mystring::operator==(const Mystring &rhs) const {
+    // Use the c string style strcmp to get a boolean for if the two strings are equal
+    return (std::strcmp(str, rhs.str) == 0);
+}
+
+// Make lower case operator
+Mystring Mystring::operator-() const {
+    // Allocate new space for a lower case copy
+    char *buff = new char[std::strlen(str) + 1];
+    // Copy str into buff
+    std::strcpy(buff, str);
+    // Loop through buff, making each letter lowercase
+    for(size_t i {0}; i <std::strlen(buff); i++)
+        buff[i] = std::tolower(buff[i]);
+    // Create a mystring object as a copy of buff
+    Mystring temp {buff};
+    // Delete the memory used by buff as it is no longer being used
+    delete [] buff;
+    // Return the mystring object
+    return temp;
+}
+
+// Concatenate
+Mystring Mystring::operator+(const Mystring &rhs) const {
+    // Allocate new space for a concatenated
+    char *buff = new char[std::strlen(str) + std::strlen(rhs.str) + 1];
+    // Copy str into buff
+    std::strcpy(buff, str);
+    // Use cstring concat function to concatenate shit
+    std::strcat(buff, rhs.str);
+    // Create Mystring object
+    Mystring temp {buff};
+    delete [] buff;
+    return temp;
+}
+
+
 // Destructor
 Mystring::~Mystring() {
     // Freeing up the memory we created for str
