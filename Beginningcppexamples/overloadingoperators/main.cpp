@@ -43,5 +43,11 @@ int main() {
     kurt.display();
     a.display();
 
+    // Testing the other operator overloads
+    Mystring callum = -cal;
+    callum.display();
+    Mystring cal2 = cal + "McCormick";
+    std::cout << (cal == cal2) << std::endl;
+
     return {};
 }
