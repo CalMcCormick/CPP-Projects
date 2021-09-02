@@ -29,6 +29,19 @@ public:
     // Move assignment operator
     Mystring &operator=(Mystring &&rhs);
 
+    // Other operator overloading
+    // Make the string lowercase
+    // Unary operators take no parameters
+    Mystring operator-() const;
+
+    // Concatenation operator overloader
+    // Binary operators take one paramet
+    Mystring operator+(const Mystring &rhs) const;
+
+    // Equality operator
+    bool operator==(const Mystring &rhs) const;
+
+
     // Member methods
     void display() const;
     int get_length() const;
