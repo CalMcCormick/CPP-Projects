@@ -5,6 +5,10 @@
 #include <iostream>
 
 class Mystring {
+    // insertion overloadning, making them friends of the class so they can access shit without being awkward
+    friend std::ostream &operator<<(std::ostream &os, const Mystring &rhs);
+    friend std::istream &operator>>(std::istream &in, Mystring &rhs);
+
 private:
     char *str; // C-style
 
@@ -40,7 +44,6 @@ public:
 
     // Equality operator
     bool operator==(const Mystring &rhs) const;
-
 
     // Member methods
     void display() const;
