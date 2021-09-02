@@ -49,5 +49,12 @@ int main() {
     Mystring cal2 = cal + "McCormick";
     std::cout << (cal == cal2) << std::endl;
 
+    // Testing out the overloaded instersion/extraction operators
+    Mystring new_name;
+    std::cout << "Enter another name please sir: ";
+    std::cin >> new_name;
+
+    std::cout << "\nYou created the new Mystring object with the name: " << new_name;
+
     return {};
 }
