@@ -131,3 +131,19 @@ void Mystring::display() const {
 const char *Mystring::get_str() const {
     return str;
 }
+
+// Global functions, written here because they are friends of the class
+// Overloading the insertion operators so we can use them with our class
+std::ostream &operator<<(std::ostream &os, const Mystring &rhs) {
+    os << rhs.str;
+    return os;
+}
+
+// Overloading the extraction operator
+std::istream &operator>>(std::istream &in, Mystring &rhs) {
+    char *buff = new char[1000];
+    in >> buff;
+    rhs = Mystring{buff};
+    delete [] buff;
+    return in;
+}
